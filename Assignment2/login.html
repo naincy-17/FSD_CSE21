@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function checklogin(clbk) {
+            let validUser = "abc";
+            let validPass = "123";
+
+            if (clbk.user === validUser && clbk.password === validPass) {
+                document.write("hello");
+            }
+        }
+
+        function login() {
+            return {
+                user: prompt("Enter your username:"),
+                password: prompt("Enter your password:")
+            };
+        }
+        checklogin(login());
+
+
+    </script>
+</body>
+
+</html>
