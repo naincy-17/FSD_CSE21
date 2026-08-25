@@ -76,3 +76,20 @@ output of json using java:
 object: it represent Datatype
 Object: Format is object type(constructor type)
 
+#####Call Back:#####
+ecma-6
+A callback in JavaScript is a function passed as an argument to another function, which is executed later to complete a task or respond to an event.
+What is a Callback?
+A callback function is a function that you provide as an argument to another function. The receiving function decides when and how to execute the callback, either immediately or after completing a task. This mechanism allows JavaScript to handle asynchronous operations like network requests, timers, or user interactions without blocking the main program flow 
+W3Schools
+W3Schools
++2
+.
+
+Synchronous vs Asynchronous Callbacks
+Synchronous callbacks are executed immediately within the outer function. For example, array methods like map(), filter(), and forEach() use synchronous callbacks, which block further execution until the callback completes 
+W3Schools
+W3Schools
++1
+.
+Asynchronous callbacks are executed later, often after an event occurs or an asynchronous operation finishes. Functions like setTimeout(), addEventListener(), or network requests rely on asynchronous callbacks to prevent the application from freezing while waiting for a task to complete 
