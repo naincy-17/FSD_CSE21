@@ -93,3 +93,28 @@ W3Schools
 +1
 .
 Asynchronous callbacks are executed later, often after an event occurs or an asynchronous operation finishes. Functions like setTimeout(), addEventListener(), or network requests rely on asynchronous callbacks to prevent the application from freezing while waiting for a task to complete 
+
+
+1 sept
+
+What is filter method?
+The filter() method is used on arrays.
+It goes through each item in the array and keeps only the items that match a condition you give it.
+Think of it like a sieve or strainer: you pour everything in, but only the items that fit your rule stay in the result.
+
+What is map method?
+The map() method is used on arrays.
+It goes through each item in the array and transforms it into something new, returning a new array of the same length.
+
+👉 Think of it like a factory machine:
+
+You put raw materials (array items) on one side.
+
+The machine processes each item (using your function).
+
+On the other side, you get a new product for each item.
+
+What is reduce method?
+
+Difference between for each loop and map?
+for each just pick element whereas map picks element as well as aplly operation
