@@ -118,3 +118,13 @@ What is reduce method?
 
 Difference between for each loop and map?
 for each just pick element whereas map picks element as well as aplly operation
+
+
+
+3rd sept
+Callback hell → async tasks are nested inside each other, creating messy pyramid‑shaped code.
+
+Promises → flatten those steps into a clean chain using .then() and .catch().
+
+Result → code becomes easier to read, maintain, and debug.
+
