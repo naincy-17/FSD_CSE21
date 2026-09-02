@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bus">
+        <div class = "title">
+            <img src="img1.jpg" class="image" alt="">
+            <h3>Bus Booking System</h3>
+        </div>
+        <div class = "user-info-box">
+            <p class="user-info-label">User Information</p>
+        </div>
+        <div class="user-info">
+            <div class="user-info-value">
+                <label for="name">User Name:</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div class="user-info-value">
+                <label for="age">User Age:</label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="user-info-value">
+                <label for="Aadhar">User Aadhar no:</label>
+                <input type="text" id="Aadhar" name="Aadhar">
+            </div>
+            <div class="user-info-value">
+                <label for="city">Select City:</label>
+                <select id="city" name="city">
+                    <option value="city1">Mumbai</option>
+                    <option value="city2">Kolkata</option>
+                    <option value="city3">Delhi</option>
+                    <option value="city4">Chennai</option>
+                </select>
+            </div>
+            <div class="user-info-value">
+                <label for="Journey date">Journey Date:</label>
+                <input type="date" id="Journey date" name="Journey date">
+            </div>
+        </div>
+        <div class="user-info-box">
+            <p class="user-info-label">Bus Information</p>
+        </div>
+        <div class="user-info-value">
+            <div>
+                <input type="radio" id="bus1" name="bus" value="bus1">
+                <label for="bus1">AC Bus Rs. 2000</label>
+            </div>
+            <div>
+                <input type="radio" id="bus2" name="bus" value="bus2">
+                <label for="bus2">Non-AC Bus Rs. 1000</label>
+            </div>
+            <div class="user-info-value">
+                <label for="seats">Number of Seats:</label>
+                <select type="number" id="seats" name="seats">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+            </div>
+            <button type="submit" class="submit-button">Book Bus</button>
+        </div>
+    </div>
+</body>
+</html>

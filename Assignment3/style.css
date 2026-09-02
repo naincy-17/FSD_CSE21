@@ -1,0 +1,76 @@
+.bus{
+    height: 600px;
+    width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #ad99e2;
+    border-color: #000;
+    border-width: 5px;
+    border-style: solid;
+}
+
+.title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.image{
+    width: 100px;
+    height: 100px;
+    display: block;
+    border-radius: 500px;
+}
+
+.h3{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+
+}
+
+.user-info-box{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 40px;
+    background-color: #f2f2f2;
+}
+
+.user-info-label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin: auto;
+    align-items: center;
+}
+
+.user-info-value{
+    font-size: 25px;
+    color: #120404;
+    margin-left: 10px;
+    margin-right: auto;
+    align-items: center;
+    z-index: 165px;
+    margin-top: 5px;
+}
+
+.submit-button{
+    display: block;
+    margin: auto;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #333;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
