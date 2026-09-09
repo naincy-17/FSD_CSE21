@@ -1,0 +1,5 @@
+# is library and its function are framework
+fast because it works on single thread making it lightweight
+react has its own framework vite
+uses jsx
+

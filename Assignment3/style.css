@@ -74,3 +74,12 @@
     border-radius: 5px;
     cursor: pointer;
 }
+
+.confirmation-block{
+margin-top:20px;
+ background:#f9f9f9; 
+ padding:10px; 
+ border:1px solid #333;
+
+}
+ 

@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div class="bus">
-        <div class = "title">
+        <div class="title">
             <img src="img1.jpg" class="image" alt="">
             <h3>Bus Booking System</h3>
         </div>
-        <div class = "user-info-box">
+        <div class="user-info-box">
             <p class="user-info-label">User Information</p>
         </div>
         <div class="user-info">
@@ -65,7 +67,50 @@
                 </select>
             </div>
             <button type="submit" class="submit-button">Book Bus</button>
-        </div>
     </div>
+    </div>
+    <script>
+        function bookBus(user, bus, fare) {
+            return new Promise((resolve, reject) => {
+                setTimeout(() => {
+                    if (user && bus && fare) {
+                        resolve({ user, bus, fare });
+                    } else {
+                        reject("Booking failed: Missing info");
+                    }
+                }, 1000); 
+            });
+        }
+
+        document.getElementById("bookBtn").addEventListener("click", () => {
+            const userName = document.getElementById("name").value;
+            const busOption = document.querySelector('input[name="bus"]:checked');
+            const seats = parseInt(document.getElementById("seats").value);
+
+            if (!userName || !busOption) {
+                document.getElementById("confirmation-block").innerHTML =
+                    `<p style="color:red;">Please enter your name and select a bus.</p>`;
+                return;
+            }
+
+            let busSelected = busOption.value;
+            let fare = busSelected.includes("AC") ? 2000 : 1000;
+            let totalFare = fare * seats;
+
+            bookBus(userName, busSelected, totalFare)
+                .then(result => {
+                    document.getElementById("confirmation-block").innerHTML =
+                        `<h3>Booking Confirmed</h3>
+                         <p>User: ${result.user}</p>
+                         <p>Bus Selected: ${result.bus}</p>
+                         <p>Total Fare: ₹${result.fare}</p>`;
+                })
+                .catch(error => {
+                    document.getElementById("confirmation-block").innerHTML =
+                        `<p style="color:red;">${error}</p>`;
+                });
+        });
+    </script>
 </body>
+
 </html>
